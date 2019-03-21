@@ -1,0 +1,38 @@
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.main{
+    padding: 0;
+    .logo{
+        background-image: linear-gradient(to right,grey 0%,grey 100%), url("../src/img/city-min.jpg");
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 120% 240%;
+        background-blend-mode: multiply;
+    }
+
+    .location{
+        margin-bottom: 7rem;
+
+        .share-icons>a{
+            margin-right: 1rem;
+            color: #808080;
+        }
+    }
+
+    .map{
+        height: 20rem;
+        width: 100%;
+    }
+
+    .share{
+        height: 20vh;
+
+        .fa{
+            color: #fff;
+            font-size: 2vw;
+        }
+    }
+}

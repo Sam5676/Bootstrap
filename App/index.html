@@ -1,10 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Bootstrap</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-
+    <nav class="top-nav navbar navbar-expand-sm bg-dark">
+        <ul class="menu top-nav__menu navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="text-secondary nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <li class="top-nav__item nav-item">
+                <a class="text-light-gray nav-link" href="#">Link 2</a>
+            </li>
+            <li class="top-nav__item nav-item">
+                <a class="text-light-gray nav-link" href="#">Link 3</a>
+            </li>
+            <li class="bg-info nav-item w-75 dropdown">
+                <a class="text-light nav-link d-flex justify-content-around align-items-center dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-shopping-cart pl"></i>
+                    <span>Dropdown</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header class="container-fluid">
+        <div class="row">
+            <h2 class="top-logo col-xl-6 text-capitalize"><a class="logo-link text-dark" href="#"><b>AVENUE</b> FASHION</a></h2>
+            <nav class="col-xl-12 container navbar navbar-expand-sm">
+                <ul class="row right-nav__menu navbar-nav">
+                    <li class="col-xl-2 nav-item dropdown">
+                        <a class="text-center nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="col-xl-2 menu__item nav-item">
+                        <a class="text-center nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="col-xl-2 menu__item nav-item">
+                        <a class="text-center nav-link" href="#">Link 3</a>
+                    </li>
+                    <li class="col-xl-2 menu__item nav-item">
+                        <a class="text-center nav-link" href="#">Link 3</a>
+                    </li>
+                    <li class="col-xl-2 nav-item dropdown">
+                        <a class="text-center nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="col-xl-8 d-flex justify-content-center">
+                        <form class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main container-fluid">
+        <header class="logo row d-flex flex-column align-items-center justify-content-center mb-5">
+            <h1 class="text-white"><b>LOCAL</b> STORES</h1>
+            <h2 class="text-white">FIND A STORE NEAR YOU</h2>
+        </header>
+        <div class="main-articles row d-flex justify-content-center mb-5">
+            <article class="col-xl-4">
+                <h4>LONDON</h4>
+                <p>2043 RULE SANT-HONORE, 75001 LONDON</p>
+                <p>
+                    The main content is the biggest and the most important part
+                    of your site. It is common with unequal column widths, so
+                    that most of the space is reserved for the main content.
+                    The side content (if any).
+                </p>
+                <button type="button" class="btn btn-outline-info">Primary</button>
+            </article>
+            <article class="col-xl-4">
+                <h4>NEW YORK</h4>
+                <p>2043 RULE SANT-HONORE, 75001 LONDON</p>
+                <p>
+                    The main content is the biggest and the most important part
+                    of your site. It is common with unequal column widths, so
+                    that most of the space is reserved for the main content.
+                    The side content (if any).
+                </p>
+                <button type="button" class="btn btn-outline-info">Primary</button>
+            </article>
+            <article class="col-xl-4">
+                <h4>PARIS</h4>
+                <p>2043 RULE SANT-HONORE, 75001 LONDON</p>
+                <p>
+                    The main content is the biggest and the most important part
+                    of your site. It is common with unequal column widths, so
+                    that most of the space is reserved for the main content.
+                    The side content (if any).
+                </p>
+                <button type="button" class="btn btn-outline-info">Primary</button>
+            </article>
+        </div>
+        <div class="location contacts row bg-dark-white">
+            <iframe class="map col-xl-11" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d163720.5843738355!2d8.49648811640625!3d50.121212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sde!4v1530128368360" allowfullscreen></iframe>
+            <article class="col-xl-7 bg-dark-white">
+                <h4>LONDON</h4>
+                <p>2043 RULE SANT-HONORE, 75001 LONDON</p>
+                <p>
+                    The main content is the biggest and the most important part
+                    of your site. It is common with unequal column widths, so
+                    that most of the space is reserved for the main content.
+                    The side content (if any).
+                </p>
+                <div class="share-icons d-flex justify-content-start align-items-center m-3">
+                    <a href="#" class="fa fa-facebook-f"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest-p"></a>
+                </div>
+            </article>
+        </div>
+        <section class="bg-dark-white">
+            <div class="row d-flex justify-content-center">
+                <section class="col-xl-3">
+                    <h6>INFORMATION</h6>
+                    <ul>
+                        <li><a class="text-dark" href="#">The brand</a></li>
+                        <li><a class="text-dark" href="#">The local</a></li>
+                        <li><a class="text-dark" href="#">The stores</a></li>
+                        <li><a class="text-dark" href="#">Customer service</a></li>
+                        <li><a class="text-dark" href="#">Site map</a></li>
+                    </ul>
+                </section>
+                <section class="col-xl-3">
+                    <h6>INFORMATION</h6>
+                    <ul>
+                        <li><a class="text-dark" href="#">The brand</a></li>
+                        <li><a class="text-dark" href="#">The local</a></li>
+                        <li><a class="text-dark" href="#">The stores</a></li>
+                        <li><a class="text-dark" href="#">Customer service</a></li>
+                        <li><a class="text-dark" href="#">Site map</a></li>
+                    </ul>
+                </section>
+                <section class="col-xl-3">
+                    <h6>INFORMATION</h6>
+                    <ul>
+                        <li><a class="text-dark" href="#">The brand</a></li>
+                        <li><a class="text-dark" href="#">The local</a></li>
+                        <li><a class="text-dark" href="#">The stores</a></li>
+                        <li><a class="text-dark" href="#">Customer service</a></li>
+                        <li><a class="text-dark" href="#">Site map</a></li>
+                    </ul>
+                </section>
+                <section class="col-xl-3">
+                    <h6>INFORMATION</h6>
+                    <ul>
+                        <li><a class="text-dark" href="#">The brand</a></li>
+                        <li><a class="text-dark" href="#">The local</a></li>
+                        <li><a class="text-dark" href="#">The stores</a></li>
+                        <li><a class="text-dark" href="#">Customer service</a></li>
+                        <li><a class="text-dark" href="#">Site map</a></li>
+                    </ul>
+                </section>
+                <section class="col-xl-3">
+                    <h6>INFORMATION</h6>
+                    <ul>
+                        <li><a class="text-dark" href="#">The brand</a></li>
+                        <li><a class="text-dark" href="#">The local</a></li>
+                        <li><a class="text-dark" href="#">The stores</a></li>
+                        <li><a class="text-dark" href="#">Customer service</a></li>
+                        <li><a class="text-dark" href="#">Site map</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="share row d-flex justify-content-center align-items-stretch mt-5 pb-3">
+                <div class="bg-dark col-xl-5 d-flex flex-column justify-content-center align-items-center m-3">
+                    <p class="text-white"><b>AWARD WINNER</b></p>
+                    <p class="text-white">FASHION AWARDS 2016</p>
+                </div>
+                <div class="bg-info col-xl-5 d-flex justify-content-around align-items-center m-3">
+                    <a href="#" class="fa fa-facebook-f"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest-p"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark d-flex justify-content-around mt-5 pb-3">
+        <p class="text-light-gray">&copy; 2016 <b>AVENUE</b> FASHION &trade;</p>
+        <p class="text-light-gray">Design by author</p>
+        <p class="text-light-gray">Dev by Anotherman</p>
+    </footer>
 </body>
 </html>

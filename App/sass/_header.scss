@@ -1,0 +1,32 @@
+.menu{
+    display: grid;
+    justify-items: center;
+
+    &__item{
+
+    }
+}
+.top-nav {
+    &__menu {
+        grid-template-columns: 13fr 2fr 2fr 5fr 4fr;
+    }
+}
+
+header {
+    .top-logo{
+        .logo-link{
+            text-decoration: none;
+        }
+    }
+    .container{
+        width: 50%;
+    }
+    .right-nav {
+        &__menu {
+            grid-template-columns: repeat(6, auto);
+        }
+    }
+    .input-group{
+        width: 60%;
+    }
+}
